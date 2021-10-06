@@ -1,0 +1,50 @@
+Group_23
+Linux terminal (GitBash) commands
+
+1) Посмотреть где я  pwd
+2) Создать папку  mkdir dir_1                                                                                                                                                                                                                        3) Зайти в папку cd dir_1
+4) Создать 3 папки mkdir dir_1 dir_2 dir_3
+5) Зайти в любую папку  cd dir_2
+6) Создать 5 файлов (3 txt, 2 json)    touch 1.txt 2.txt 3.txt 1.json 2.json  
+7) Создать 3 папки  mkdir {1..3}
+8) Вывести список содержимого папки  ls -la
+9) + Открыть любой txt файл vim 1.txt 
+10) + написать туда что-нибудь, любой текст insert (кнопка i)  
+11) + сохранить и выйти escape, внизу написать :wq  нажать enter 
+12) Выйти из папки на уровень выше  cd ..
+13) переместить любые 2 файла, которые вы создали, в любую другую папку в рамках одной диретории  mv 1.txt 2.txt dir_1                         У меня с помощью точки слеш или две точки слеш не перемещает из одной директории в другую поэтому я пишу mv пробел весь путь откуда пробел весь путь куда включая имя перемещаемого файла    еще вариант нашла mv имяпапки/имяфайла пробел имя папки
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку cp 1.txt 2.txt dir_1
+15) Найти файл по имени  find . -name file1.txt     
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает   tail -f file1.txt 
+17) вывести несколько первых строк из текстового файла  head -n3 имяфайла         
+18) вывести несколько последних строк из текстового файла   tail -n2 имя_файла
+17 и 18 может быть без буквы n
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает less имяфайла
+20) вывести дату и время date
+
+"http://162.55.220.72:5005/get_method?name=kotlena&age=38"
+["kotlena","38"]
+
+
+#!/bin/bash
+
+mkdir scriptdir
+cd scriptdir
+mkdir script1dir script2dir script3dir
+cd script1dir
+touch file1.txt file2.txt file3.txt 1.json 2.json
+mkdir dir1 dir2 dir3
+ls -la
+mv file1.txt file2.txt dir1 это внутри скрипта                                                                                                                                                                                                                                                             user@HOME-PC MINGW64 /d/Linux/group_23
+$ ./firstscript.txt
+total 4
+drwxr-xr-x 1 user 197121 0 Oct  4 18:43 .
+drwxr-xr-x 1 user 197121 0 Oct  4 18:43 ..
+-rw-r--r-- 1 user 197121 0 Oct  4 18:43 1.json
+-rw-r--r-- 1 user 197121 0 Oct  4 18:43 2.json
+drwxr-xr-x 1 user 197121 0 Oct  4 18:43 dir1
+drwxr-xr-x 1 user 197121 0 Oct  4 18:43 dir2
+drwxr-xr-x 1 user 197121 0 Oct  4 18:43 dir3
+-rw-r--r-- 1 user 197121 0 Oct  4 18:43 file1.txt
+-rw-r--r-- 1 user 197121 0 Oct  4 18:43 file2.txt
+-rw-r--r-- 1 user 197121 0 Oct  4 18:43 file3.txt
