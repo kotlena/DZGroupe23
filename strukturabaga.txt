@@ -1,0 +1,19 @@
+Структура Баг Репорта
+
+Name of Bag Report (название Баг Репорта)
+Summary (короткое описание)
+Project (проект)
+Сomponent (компонент приложения)
+Version (номер версии)
+Severity (серьезность)
+Priorety (приоритет)
+Status of Bag (статус Баг)
+Author (автор)
+Assignned to (назначен на)
+Enviroment (окружение)
+Steps to Reproduce (шаги воспроизведения)
+Actual Result (фактический результат)
+Expected Result (ожидаемый результат)
+Additional information (дополнения)
+
+
